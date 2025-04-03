@@ -1,0 +1,37 @@
+package java101.practice;
+import java.util.Scanner;
+
+//MAD LIBS GAME
+class MadLibs {
+
+    public static void main(String[] args){
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        String noun1;
+        String verb1;
+        String noun2;
+        String adjective1;
+        String adjective2;
+        
+        System.out.print("Enter a noun (person/animal): ");
+        noun1 = scanner.nextLine();
+        
+        System.out.print("Enter a verb (active verb): ");
+        verb1 = scanner.nextLine();
+        
+        System.out.print("Enter a noun (person/animal): ");
+        noun2 = scanner.nextLine();
+        
+        System.out.print("Enter an adjective (descriptive_feeling): ");
+        adjective1 = scanner.nextLine();
+        
+        System.out.print("Enter an adjective (descriptive_clothing): ");
+        adjective2 = scanner.nextLine();
+        
+        System.out.println();
+        System.out.println("Tomorrow I'm going to meet "+noun1+". We are going to "+verb1+" outside. My "+noun2+" is going to be there too. I am really "+adjective1+" to meet them after so long. I am going to wear "+adjective2+" clothes.");
+        
+        scanner.close();
+    }
+}
